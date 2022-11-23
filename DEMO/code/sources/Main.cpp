@@ -1,6 +1,14 @@
 #include <Window.h>
 #include <MemoryAllocator.h>
 
+class Cosa
+{
+private:
+	int a, b;
+public:
+	Cosa() : a(2), b(4444) {}
+};
+
 int main()
 {
 	std::string nombre("ventana");
@@ -8,6 +16,7 @@ int main()
 	//while(true){}
 
 	MemoryAllocator characters(8);
-	int* cosa = characters.allocate<int>();
+	Cosa* cosa = characters.allocate<Cosa>();
+
 	return 0;
 }

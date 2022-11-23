@@ -5,15 +5,17 @@ class MemoryAllocator
 {
 private:
 	std::vector<char> allocation;
+
+	unsigned int size;
 	unsigned int allocated;
 
 public:
-	MemoryAllocator(unsigned int bytesAllocated) : allocation(bytesAllocated) { allocated = 0; };
+	MemoryAllocator(unsigned int bytesAllocated) : allocation(bytesAllocated), size(bytesAllocated) { allocated = 0; };
 	
 private:
 	void* bytesAllocation(unsigned bytes) 
 	{
-		if (allocated + bytes > allocation.max_size()) return nullptr;
+		if (allocated + bytes > size) return nullptr;
 
 		void* chunk = allocation.data() + allocated;
 		allocated += bytes;
@@ -25,6 +27,7 @@ public:
 	TYPE* allocate()
 	{
 		TYPE* returner = static_cast<TYPE*>( bytesAllocation(sizeof(TYPE)) );
+		returner = new(returner) TYPE();
 
 		return returner;
 	}
