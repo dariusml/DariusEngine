@@ -1,5 +1,6 @@
 #include <Window.h>
 #include <MemoryAllocator.h>
+#include <iostream>
 
 class Cosa
 {
@@ -7,6 +8,8 @@ private:
 	int a, b;
 public:
 	Cosa() : a(2), b(4444) {}
+	Cosa(int a) : a(a), b(4444) {}
+	Cosa(int a, int b) : a(a), b(b) {}
 };
 
 int main()
@@ -15,8 +18,9 @@ int main()
 	//Darius::Window ventana(nombre, 1024, 768, false);
 	//while(true){}
 
-	MemoryAllocator characters(8);
+	MemoryAllocator characters(32);
 	Cosa* cosa = characters.allocate<Cosa>();
+
 
 	return 0;
 }
