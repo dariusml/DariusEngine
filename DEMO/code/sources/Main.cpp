@@ -19,7 +19,9 @@ int main()
 	//while(true){}
 
 	MemoryAllocator characters(32);
-	Cosa* cosa = characters.allocate<Cosa>();
+	Cosa* cosa  = characters.allocate<Cosa>();
+	Cosa* cosa1 = characters.allocate<Cosa>(123);
+	Cosa* cosa2 = characters.allocate<Cosa>(123,432);
 
 
 	return 0;

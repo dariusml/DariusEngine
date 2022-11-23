@@ -23,10 +23,10 @@ private:
 
 public:
 	template<typename TYPE, typename... Args>
-	TYPE* allocate()
+	TYPE* allocate(Args... args)
 	{
 		TYPE* returner = static_cast<TYPE*>( bytesAllocation(sizeof(TYPE)) );
-		returner = new(returner) TYPE(Args... arg);
+		returner = new(returner) TYPE(args...);
 
 		return returner;
 	}
