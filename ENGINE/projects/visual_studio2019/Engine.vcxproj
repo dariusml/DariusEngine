@@ -56,7 +56,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>..\..\libraries\windowsx64\sdl2\include;..\..\libraries\windowsx64\glm</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\libraries\windowsx64\include</AdditionalIncludeDirectories>
       <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
@@ -65,7 +65,7 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
     <Lib>
-      <AdditionalLibraryDirectories>..\..\libraries\windowsx64\sdl2\lib</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>..\..\libraries\windowsx64\lib\sdl2</AdditionalLibraryDirectories>
       <AdditionalDependencies>SDL2-staticd.lib;winmm.lib;imm32.lib;version.lib;opengl32.lib;setupapi.lib</AdditionalDependencies>
     </Lib>
     <ProjectReference>
@@ -80,7 +80,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>..\..\libraries\windowsx64\sdl2\include;..\..\libraries\windowsx64\glm</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\libraries\windowsx64\include</AdditionalIncludeDirectories>
       <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
@@ -91,7 +91,7 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
     <Lib>
-      <AdditionalLibraryDirectories>..\..\libraries\windowsx64\sdl2\lib</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>..\..\libraries\windowsx64\lib\sdl2</AdditionalLibraryDirectories>
       <AdditionalDependencies>SDL2-static.lib;winmm.lib;imm32.lib;version.lib;opengl32.lib;setupapi.lib</AdditionalDependencies>
     </Lib>
     <ProjectReference>

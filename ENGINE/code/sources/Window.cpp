@@ -1,5 +1,5 @@
 #include "../headers/Window.h"
-#include <SDL.h>
+#include <sdl2/SDL.h>
 
 namespace Darius
 {
