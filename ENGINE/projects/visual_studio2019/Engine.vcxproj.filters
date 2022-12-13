@@ -24,12 +24,18 @@
     <ClCompile Include="..\..\code\sources\WinMain.cpp">
       <Filter>Sources</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\code\sources\Thread.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\code\headers\Window.h">
       <Filter>Headers</Filter>
     </ClInclude>
     <ClInclude Include="..\..\code\headers\MemoryAllocator.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\headers\Thread.h">
       <Filter>Headers</Filter>
     </ClInclude>
   </ItemGroup>
