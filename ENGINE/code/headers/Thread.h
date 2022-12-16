@@ -38,7 +38,7 @@ namespace DariusEngine
 		}
 		bool isFinished() const { return status == FINISHED; }
 
-		void Start()
+		void Start(float frameDuration)
 		{
 			status = RUNNING;
 
@@ -141,7 +141,7 @@ namespace DariusEngine
 
 		void AddTask(Task* task) 
 		{
-			if (status = WAITING)
+			if (status == WAITING)
 			{
 				tasks.push_back(task);
 			}

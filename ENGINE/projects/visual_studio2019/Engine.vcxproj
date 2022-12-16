@@ -105,6 +105,7 @@
     <ClCompile Include="..\..\code\sources\WinMain.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\code\headers\Kernel.h" />
     <ClInclude Include="..\..\code\headers\MemoryAllocator.h" />
     <ClInclude Include="..\..\code\headers\Thread.h" />
     <ClInclude Include="..\..\code\headers\Window.h" />
