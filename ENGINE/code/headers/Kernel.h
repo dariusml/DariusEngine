@@ -65,11 +65,15 @@ namespace DariusEngine
 
 	class Entity
 	{
+		Scene* Owner;
+
 		std::map<std::string, Component* > components;
 
 		Transform_Component transform;
 
 	public:
+
+		Entity(Scene* given_Owner) : Owner(given_Owner){}
 
 		void addComponent(const std::string& id, Component* component);
 
@@ -103,6 +107,21 @@ namespace DariusEngine
 		Sound* sound;
 	};
 
+	class Controller
+	{
+	public:
+		virtual void update(float t, Entity& entity, Scene& scene) = 0;
+	};
+
+	class ControlComponenet
+	{
+		Controller* controller;
+	};
+	class ScriptComponent
+	{
+		std::string script;
+	};
+
 
 
 
@@ -113,6 +132,52 @@ namespace DariusEngine
 	public:
 		virtual std::shared_ptr<Component> createComponent(?) = 0; // hay que hacerlo en las hijas si o si
 		virtual Task* getTask() { return nullptr; }
+	};
+
+	class ControlSystem
+	{
+		class ControlTask : public Task
+		{
+			ControlTask& system;
+
+		public:
+
+			ControlTask(ControlSystem & system);
+
+
+			void Run(float frameDuration) override
+			{
+				for (auto& component : system.components)
+				{
+					//ESTO NO SSE HACE ASI
+					component->controller->update(frameDuration, *component->entity, *compoienet->entity->scene);
+				}
+			}
+		};
+		std::vector<std::shared_ptr< ScriptComponent > >components;
+	};
+
+	class ScriptingSystem
+	{
+		class ScriptRunnerTask : public Task
+		{
+			ScriptingSystem& system;
+
+		public:
+
+			ScriptRunnerTask(ScriptingSystem& system);
+
+
+			void Run(float frameDuration) override
+			{
+				for (auto& component : system.components)
+				{
+					//ESTO NO SSE HACE ASI
+					system->interpreter.run_Script(component.script);
+				}
+			}
+		};
+		std::vector<std::shared_ptr< ScriptComponent > >components;
 	};
 
 
@@ -163,6 +228,8 @@ namespace DariusEngine
 	{
 
 		std::map<std::string, std::shared_ptr<Entity>> entities;
+		std::map<std::string, System*> systems;
+		std::map<std::string, Controller*> controllers;
 
 		Kernel kernel;
 
@@ -178,6 +245,8 @@ namespace DariusEngine
 			kernel.add_task(is.getTask());
 			kernel.add_task(ss.getTask());
 		}
+
+		void addController(std::string id, Controller* controller);
 
 		void run()
 		{
