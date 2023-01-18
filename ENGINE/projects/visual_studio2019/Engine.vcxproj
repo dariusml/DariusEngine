@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|x64">
@@ -99,15 +99,50 @@
     </ProjectReference>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\code\sources\AudioComponent.cpp" />
+    <ClCompile Include="..\..\code\sources\AudioSystem.cpp" />
+    <ClCompile Include="..\..\code\sources\Component.cpp" />
+    <ClCompile Include="..\..\code\sources\ControlComponent.cpp" />
+    <ClCompile Include="..\..\code\sources\Controller.cpp" />
+    <ClCompile Include="..\..\code\sources\ControlSystem.cpp" />
     <ClCompile Include="..\..\code\sources\dummy.cpp" />
+    <ClCompile Include="..\..\code\sources\Entity.cpp" />
+    <ClCompile Include="..\..\code\sources\Kernel.cpp" />
+    <ClCompile Include="..\..\code\sources\RenderSystem.cpp" />
+    <ClCompile Include="..\..\code\sources\ScriptComponent.cpp" />
+    <ClCompile Include="..\..\code\sources\ScriptingSystem.cpp" />
+    <ClCompile Include="..\..\code\sources\Sound.cpp" />
+    <ClCompile Include="..\..\code\sources\InputSystem.cpp" />
+    <ClCompile Include="..\..\code\sources\System.cpp" />
     <ClCompile Include="..\..\code\sources\Thread.cpp" />
+    <ClCompile Include="..\..\code\sources\Timer.cpp" />
+    <ClCompile Include="..\..\code\sources\Transform_Component.cpp" />
     <ClCompile Include="..\..\code\sources\Window.cpp" />
     <ClCompile Include="..\..\code\sources\WinMain.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\code\headers\AudioComponent.h" />
+    <ClInclude Include="..\..\code\headers\AudioSystem.h" />
+    <ClInclude Include="..\..\code\headers\AudioTask.h" />
+    <ClInclude Include="..\..\code\headers\Component.h" />
+    <ClInclude Include="..\..\code\headers\ControlComponent.h" />
+    <ClInclude Include="..\..\code\headers\ControlSystem.h" />
+    <ClInclude Include="..\..\code\headers\ControlTask.h" />
+    <ClInclude Include="..\..\code\headers\Entity.h" />
+    <ClInclude Include="..\..\code\headers\Controller.h" />
+    <ClInclude Include="..\..\code\headers\InputSystem.h" />
     <ClInclude Include="..\..\code\headers\Kernel.h" />
     <ClInclude Include="..\..\code\headers\MemoryAllocator.h" />
+    <ClInclude Include="..\..\code\headers\RenderSystem.h" />
+    <ClInclude Include="..\..\code\headers\RenderTask.h" />
+    <ClInclude Include="..\..\code\headers\Scene.h" />
+    <ClInclude Include="..\..\code\headers\ScriptComponent.h" />
+    <ClInclude Include="..\..\code\headers\ScriptingSystem.h" />
+    <ClInclude Include="..\..\code\headers\Sound.h" />
+    <ClInclude Include="..\..\code\headers\System.h" />
     <ClInclude Include="..\..\code\headers\Thread.h" />
+    <ClInclude Include="..\..\code\headers\Timer.h" />
+    <ClInclude Include="..\..\code\headers\Transform_Component.h" />
     <ClInclude Include="..\..\code\headers\Window.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

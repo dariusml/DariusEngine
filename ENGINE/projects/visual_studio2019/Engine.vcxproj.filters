@@ -13,6 +13,39 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Headers\Component">
+      <UniqueIdentifier>{a4006935-33fd-46d0-a838-53f15c9bb236}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Headers\Component\Components">
+      <UniqueIdentifier>{94872cf4-eeea-4da4-9f0c-a46b671ad4d9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Headers\System">
+      <UniqueIdentifier>{68d99763-84fb-4517-b0c0-d3140e51a106}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Headers\System\Systems">
+      <UniqueIdentifier>{9493aba8-fd69-47b8-94da-538cdcbc89d6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sources\Component">
+      <UniqueIdentifier>{22d4751e-73fb-445f-aa02-a3484e39890f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sources\Component\Components">
+      <UniqueIdentifier>{a8ef29b1-bb1f-445b-b599-d51cc73c211d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sources\System">
+      <UniqueIdentifier>{97b05a7a-7803-44a9-bda4-f4c4faba71eb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sources\System\Systems">
+      <UniqueIdentifier>{e2f0f650-4677-4678-9fe7-3b69516dab8a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Headers\EnginePrimitives">
+      <UniqueIdentifier>{30e6691c-a702-44f2-b4a2-1ec59fa78895}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sources\EnginePrimitives">
+      <UniqueIdentifier>{7512e154-3ebb-4e49-a505-313e97b9cd2c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Headers\Task">
+      <UniqueIdentifier>{fdab73c4-fb4e-435f-95b8-161e803901fe}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\code\sources\dummy.cpp">
@@ -27,6 +60,54 @@
     <ClCompile Include="..\..\code\sources\Thread.cpp">
       <Filter>Sources</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\code\sources\Timer.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\sources\Kernel.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\sources\Controller.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\sources\AudioComponent.cpp">
+      <Filter>Sources\Component\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\sources\Component.cpp">
+      <Filter>Sources\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\sources\ControlComponent.cpp">
+      <Filter>Sources\Component\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\sources\ScriptComponent.cpp">
+      <Filter>Sources\Component\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\sources\Transform_Component.cpp">
+      <Filter>Sources\Component\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\sources\AudioSystem.cpp">
+      <Filter>Sources\System\Systems</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\sources\ControlSystem.cpp">
+      <Filter>Sources\System\Systems</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\sources\InputSystem.cpp">
+      <Filter>Sources\System\Systems</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\sources\RenderSystem.cpp">
+      <Filter>Sources\System\Systems</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\sources\ScriptingSystem.cpp">
+      <Filter>Sources\System\Systems</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\sources\System.cpp">
+      <Filter>Sources\System\Systems</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\sources\Entity.cpp">
+      <Filter>Sources\EnginePrimitives</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\sources\Sound.cpp">
+      <Filter>Sources\EnginePrimitives</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\code\headers\Window.h">
@@ -40,6 +121,63 @@
     </ClInclude>
     <ClInclude Include="..\..\code\headers\Kernel.h">
       <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\headers\Timer.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\headers\Component.h">
+      <Filter>Headers\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\headers\AudioComponent.h">
+      <Filter>Headers\Component\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\headers\ControlComponent.h">
+      <Filter>Headers\Component\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\headers\ScriptComponent.h">
+      <Filter>Headers\Component\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\headers\Transform_Component.h">
+      <Filter>Headers\Component\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\headers\System.h">
+      <Filter>Headers\System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\headers\ScriptingSystem.h">
+      <Filter>Headers\System\Systems</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\headers\RenderSystem.h">
+      <Filter>Headers\System\Systems</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\headers\InputSystem.h">
+      <Filter>Headers\System\Systems</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\headers\AudioSystem.h">
+      <Filter>Headers\System\Systems</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\headers\ControlSystem.h">
+      <Filter>Headers\System\Systems</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\headers\Sound.h">
+      <Filter>Headers\EnginePrimitives</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\headers\Entity.h">
+      <Filter>Headers\EnginePrimitives</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\headers\RenderTask.h">
+      <Filter>Headers\Task</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\headers\Controller.h">
+      <Filter>Headers\EnginePrimitives</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\headers\Scene.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\headers\AudioTask.h">
+      <Filter>Headers\Task</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\headers\ControlTask.h">
+      <Filter>Headers\Task</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

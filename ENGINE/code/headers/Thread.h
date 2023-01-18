@@ -38,7 +38,7 @@ namespace DariusEngine
 		}
 		bool isFinished() const { return status == FINISHED; }
 
-		void Start(float frameDuration)
+		void Start(float delta = 0.0f)
 		{
 			status = RUNNING;
 
@@ -49,6 +49,8 @@ namespace DariusEngine
 
 			status = FINISHED;
 		}
+
+
 	protected:
 		virtual void Run() = 0;
 	};
@@ -59,7 +61,7 @@ namespace DariusEngine
 
 		std::queue< Task* > taskQueue;
 
-		std::mutex task_queue_mutex;
+		std::mutex task_queue_mutex; //To lock a resource
 
 		bool running;
 

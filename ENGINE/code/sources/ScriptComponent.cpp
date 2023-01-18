@@ -1,0 +1,1 @@
+#include "../headers/ScriptComponent.h"
