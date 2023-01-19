@@ -26,7 +26,7 @@ namespace DariusEngine
 	{
 		std::list<Task*> tasks;
 
-		bool exit;
+		bool exit = false;
 		float fps;
 
 	public:

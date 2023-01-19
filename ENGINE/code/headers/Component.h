@@ -1,5 +1,5 @@
 #pragma once
-
+#include <string>
 
 namespace DariusEngine
 {
@@ -8,6 +8,11 @@ namespace DariusEngine
 	class Component
 	{
 	protected:
-		Entity* owner;
+		Entity* owner = nullptr;
+
+	public:
+		virtual Entity* getOwner() { return owner; }
+
+		static std::string name() { return ""; };
 	};
 }

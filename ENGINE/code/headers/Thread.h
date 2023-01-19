@@ -69,7 +69,7 @@ namespace DariusEngine
 		Thread_Pool()
 		{
 			running = false;
-			for (int i = 0; i < std::thread::hardware_concurrency(); ++i)
+			for (unsigned i = 0; i < std::thread::hardware_concurrency(); ++i)
 			{
 				threads.push_back(std::make_shared<std::thread>(threadFunction, this));
 			}

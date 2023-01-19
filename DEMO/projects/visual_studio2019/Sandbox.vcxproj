@@ -58,7 +58,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>..\..\..\ENGINE\code\headers</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>F:\REPOSITORIOS\DariusEngine\ENGINE\libraries\windowsx64\include;..\..\..\ENGINE\code\headers</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -75,7 +75,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>..\..\..\ENGINE\code\headers</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>F:\REPOSITORIOS\DariusEngine\ENGINE\libraries\windowsx64\include;..\..\..\ENGINE\code\headers</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>

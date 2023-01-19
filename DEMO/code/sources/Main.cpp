@@ -1,6 +1,7 @@
 #include <Window.h>
 #include <MemoryAllocator.h>
 #include <iostream>
+#include <Scene.h>
 
 class Cosa
 {
@@ -17,6 +18,9 @@ int main()
 	std::string nombre("ventana");
 	//Darius::Window ventana(nombre, 1024, 768, false);
 	//while(true){}
+	
+	DariusEngine::Scene scene("adw");
+	scene.run();
 
 	MemoryAllocator characters(32);
 	Cosa* cosa  = characters.allocate<Cosa>();

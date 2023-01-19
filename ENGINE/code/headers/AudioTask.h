@@ -1,6 +1,7 @@
 #pragma once
 
 #include "Thread.h"
+#include <iostream>
 
 namespace DariusEngine
 {
@@ -8,7 +9,10 @@ namespace DariusEngine
 	class AudioTask : public Task
 	{
 	public:
-		void Run() override;
+		void Run() override
+		{
+
+		}
 	};
 
 }

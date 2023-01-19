@@ -46,6 +46,9 @@
     <Filter Include="Headers\Task">
       <UniqueIdentifier>{fdab73c4-fb4e-435f-95b8-161e803901fe}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Sources\Task">
+      <UniqueIdentifier>{b1d0ea1d-acd1-4d47-b512-1550f52ff966}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\code\sources\dummy.cpp">
@@ -107,6 +110,9 @@
     </ClCompile>
     <ClCompile Include="..\..\code\sources\Sound.cpp">
       <Filter>Sources\EnginePrimitives</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\sources\RenderTask.cpp">
+      <Filter>Sources\Task</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -178,6 +184,15 @@
     </ClInclude>
     <ClInclude Include="..\..\code\headers\ControlTask.h">
       <Filter>Headers\Task</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\headers\InputTask.h">
+      <Filter>Headers\Task</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\headers\MeshComponent.h">
+      <Filter>Headers\Component\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\headers\Mesh.h">
+      <Filter>Headers\EnginePrimitives</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

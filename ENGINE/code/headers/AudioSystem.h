@@ -11,14 +11,8 @@ namespace DariusEngine
 		AudioTask audioTask;
 
 	public:
-		std::shared_ptr<Component> createComponent(std::string)
-		{
-			auto audioComponent = std::make_shared<AudioComponent>();
-			//cargar el archivo de audio
-			//audioComponent->sound = ...;
-			return audioComponent;
-		}
-		Task* get_task()
+
+		Task* getTask() override
 		{
 			return &audioTask;
 		}

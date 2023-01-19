@@ -34,6 +34,22 @@ namespace DariusEngine
         return std::chrono::duration_cast<std::chrono::milliseconds>(endTime - m_StartTime).count();
     }
 
+    std::chrono::time_point<std::chrono::system_clock> Timer::currentTime()
+    {
+        std::chrono::time_point<std::chrono::system_clock> endTime;
+
+        if (m_bRunning)
+        {
+            endTime = std::chrono::system_clock::now();
+        }
+        else
+        {
+            endTime = m_EndTime;
+        }
+
+        return endTime;
+    }
+
     double Timer::elapsedSeconds()
     {
         return elapsedMilliseconds() / 1000.0;

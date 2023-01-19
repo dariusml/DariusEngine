@@ -10,7 +10,7 @@ namespace DariusEngine
 
 	public:
 
-		Task* get_task()
+		RenderTask* getTask() override
 		{
 			return &renderTask;
 		}

@@ -8,6 +8,6 @@ namespace DariusEngine
 	{
 	public:
 
-		Sound* sound;
+		Sound* sound = nullptr;
 	};
 }

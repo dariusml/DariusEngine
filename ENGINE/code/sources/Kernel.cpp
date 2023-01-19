@@ -24,7 +24,7 @@ namespace DariusEngine
 
 				if (delay > 0.f)
 				{
-					std::this_thread::sleep_for(std::chrono::seconds(1));
+					std::this_thread::sleep_for(std::chrono::duration<float>{delay});
 				}
 
 				delta = (float)timer.elapsedSeconds();

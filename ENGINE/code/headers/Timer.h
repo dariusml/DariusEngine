@@ -19,5 +19,7 @@ namespace DariusEngine
         double elapsedMilliseconds();
 
         double elapsedSeconds();
+
+        std::chrono::time_point<std::chrono::system_clock> currentTime();
 	};
 }

@@ -109,6 +109,7 @@
     <ClCompile Include="..\..\code\sources\Entity.cpp" />
     <ClCompile Include="..\..\code\sources\Kernel.cpp" />
     <ClCompile Include="..\..\code\sources\RenderSystem.cpp" />
+    <ClCompile Include="..\..\code\sources\RenderTask.cpp" />
     <ClCompile Include="..\..\code\sources\ScriptComponent.cpp" />
     <ClCompile Include="..\..\code\sources\ScriptingSystem.cpp" />
     <ClCompile Include="..\..\code\sources\Sound.cpp" />
@@ -131,8 +132,11 @@
     <ClInclude Include="..\..\code\headers\Entity.h" />
     <ClInclude Include="..\..\code\headers\Controller.h" />
     <ClInclude Include="..\..\code\headers\InputSystem.h" />
+    <ClInclude Include="..\..\code\headers\InputTask.h" />
     <ClInclude Include="..\..\code\headers\Kernel.h" />
     <ClInclude Include="..\..\code\headers\MemoryAllocator.h" />
+    <ClInclude Include="..\..\code\headers\Mesh.h" />
+    <ClInclude Include="..\..\code\headers\MeshComponent.h" />
     <ClInclude Include="..\..\code\headers\RenderSystem.h" />
     <ClInclude Include="..\..\code\headers\RenderTask.h" />
     <ClInclude Include="..\..\code\headers\Scene.h" />
